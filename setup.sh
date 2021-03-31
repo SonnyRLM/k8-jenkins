@@ -15,7 +15,7 @@ create_cluster() {
 	--node-type t3.medium \
 	--with-oidc \
 	--ssh-access \
-	--ssh-public-key Terraform Pair \
+	--ssh-public-key TerraformPair \
 	--managed
 }
 
