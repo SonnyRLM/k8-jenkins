@@ -19,10 +19,5 @@ create_cluster() {
 	--managed
 }
 
-check_cluster() {
-	eksctl get cluster -n DemoCluster
-}
-
 
 create_cluster()
-check_cluster()
