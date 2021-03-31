@@ -2,8 +2,6 @@
 
 # Script to deploy eks cluster 
 
-
-create_cluster() {
 	echo 'launching cluster'
 	eksctl create cluster \
 	--name DemoCluster \
@@ -17,7 +15,4 @@ create_cluster() {
 	--ssh-access \
 	--ssh-public-key TerraformPair \
 	--managed
-}
 
-
-create_cluster()
