@@ -1,4 +1,4 @@
 #! /bin/bash
 
-kubectl create -f pods.yaml
+kubectl create -f podSQL.yaml
 
