@@ -9,7 +9,7 @@ if [ $var_length==0 ]
 	then
 	echo 'launching cluster'
 	eksctl create cluster \
-	--name JenkinsCluster2 \
+	--name JenkinsCluster \
 	--region eu-west-2 \
 	--nodegroup-name DemoNodes \
 	--nodes 2 \
