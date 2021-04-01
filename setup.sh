@@ -20,4 +20,6 @@ eksctl create cluster \
 --ssh-access \
 --ssh-public-key TerraformPair \
 --managed
+else
+fi
 fi
