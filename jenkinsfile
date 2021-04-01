@@ -1,0 +1,25 @@
+pipeline {
+    agent any
+    environment {
+        AWS_SECRET_ACCESS_KEY = credentials('AWS_SECRET_ACCESS_KEY')
+    }
+    stages {
+        stage('Install Requirements') {
+            steps {
+                sh "pwd"
+                sh "bash ./reqInstall.sh"
+            }
+        }
+        stage('Provision EKS') {
+            steps {
+                sh "bash setup.sh"
+            }
+        }
+        stage('Deploy SQL pod') {
+            steps {
+                sh "bash setupSQL.sh"
+            }
+        }
+    }
+}
+
