@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# General modules
+# General modules 
 sudo apt update
 sudo apt install -y unzip
 
