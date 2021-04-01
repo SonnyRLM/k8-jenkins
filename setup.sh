@@ -4,6 +4,7 @@
 clusterExist=$(eksctl get cluster | grep JenkinsCluster)
 var_length=$(${#clusterExist})
 
+echo $var_length
 
 if [ $var_length==0 ]
 	then
