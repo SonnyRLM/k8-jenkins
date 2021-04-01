@@ -7,7 +7,7 @@ var_length=${#clusterExist}
 echo ${var_length}
 
 if [ 60==1 ]
-	then
+then
 	echo 'launching cluster'
 	eksctl create cluster \
 	--name JenkinsCluster \
