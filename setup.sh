@@ -2,8 +2,6 @@
 
 # Script to deploy eks cluster 
 clusterExist=$(eksctl get cluster | grep JenkinsCluster)
-echo $clusterExist
-
 
 if [ $clusterExist ]
 	then
