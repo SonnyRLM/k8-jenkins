@@ -6,7 +6,7 @@ var_length=${#clusterExist}
 
 echo ${var_length}
 
-if [ ${var_length}<1 ]
+if [ 60<1 ]
 	then
 	echo 'launching cluster'
 	eksctl create cluster \
