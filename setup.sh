@@ -3,7 +3,7 @@
 # Script to deploy eks cluster 
 clusterExist=$(eksctl get cluster | grep JenkinsCluster)
 var_length=${#clusterExist}
-
+export $var_length
 echo ${var_length}
 
 if [ ${var_length}<1 ]
