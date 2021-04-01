@@ -5,6 +5,8 @@ clusterExist=$(eksctl get cluster | grep JenkinsCluster)
 echo $clusterExist
 
 
+if [ $clusterExist ]
+	then
 	echo 'launching cluster'
 	eksctl create cluster \
 	--name JenkinsCluster \
@@ -18,4 +20,4 @@ echo $clusterExist
 	--ssh-access \
 	--ssh-public-key TerraformPair \
 	--managed
-
+fi
